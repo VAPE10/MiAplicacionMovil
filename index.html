@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
             <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+            
             <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+            
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.mobile-1.4.5.min.js"></script>
             <title>Aplicacion Movil </title>
@@ -21,7 +23,7 @@
                     var dire=$("#direcc").val();
       $.ajax({
           type:"POST",
-          url:"envio.php",
+          url:"http://cpanel.260mb.net/VAPE10/envio.php",
           data:"nombre="+nom+"&Apellido_Paterno="+app+"&Apellido_Materno="+apm+"&Telefono="+tel+"&Email="+email+"&Direccion="+dire,
           success:recepcion
       })
